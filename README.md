@@ -8,12 +8,12 @@ This lab focuses on understanding and analyzing the asymptotic behavior of algor
 
 Suppose $T(n)$ is the worst case running time of an algorithm with input size $n$, and we know that $T(n)$ is $\mathcal{O}(n^3)$ and $\Omega(n^2)$. For each of the following statements, determine whether it must be true, must be false, or could be either true or false. Give a brief justification for each. 
 
-1. $T(n)$ is $\mathcal{O}(n^2)$.
-2. $T(n)$ is $\Theta(n^3)$.
-3. $T(n)$ is $\Omega(n)$.
-4. $T(n)$ is $\Theta(n^{1.5})$.
-5. $T(n)$ is $\mathcal{O}(n)$.
-6. $T(n)$ is $\Theta(n^2 \log n)$.
+1. $T(n)$ is $\mathcal{O}(n^2)$. either if n^2 true  n^3 = false
+2. $T(n)$ is $\Theta(n^3)$. either if n^3 true  n^2 = false
+3. $T(n)$ is $\Omega(n)$. true omega implies (n)
+4. $T(n)$ is $\Theta(n^{1.5})$. false n 1.5 grows slower lan required lower bound
+5. $T(n)$ is $\mathcal{O}(n)$. false O(n) contradics the T(n)
+6. $T(n)$ is $\Theta(n^2 \log n)$. either Bigger than n^2 smaller than n^3
 
 
 ## Problem 2
@@ -30,4 +30,4 @@ Output: int sum
             sum += f(A, i, j)
 ```
 
-Without knowing anything about $f$, what can we say about the running time of the Mystery Algorithm in terms of $n$? Justify your answer. 
+Without knowing anything about $f$, what can we say about the running time of the Mystery Algorithm in terms of $n$? Justify your answer. can only really say omega(n^2) because they call to f
